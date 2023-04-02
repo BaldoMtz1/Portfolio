@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+a{
+    color: #fff;
+}
+
+html{
+    
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #0b141e;
+    /* background-color: black; */
+    color: #fff
+}
+
+/* span{
+    color: aqua;
+} */
+
+
+/* Header Section*/
+
+.header{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: aqua;
+}
+
+.menu-bar a{
+    font-size: 1.3rem;
+    /* margin-left: 3rem; */
+    padding-right: 2rem;
+    transition: 0.4s ease;
+    
+
+}
+
+.contact-btn{
+    display: inline-block;
+    
+    /* padding: .5rem 1.5rem ;
+    border-radius: 1.2rem;
+    color: aqua;
+    background-color: #0b141e;
+    box-shadow: 0 0 1rem aqua; */
+    
+}
+.menu-bar a:hover{
+    color: aqua;
+}
+ 
+#menu-btn{
+    font-size: 2.5rem;
+    display: none;
+}
+
+
+.contact-btn:hover{
+    background: aqua;
+    color: #0b141e;
+    box-shadow: none;
+}
+
+/* ===Arreglar btn contact ===?? */
+
+/* .contact-btn:hover{
+
+    background-color: aqua; 
+    box-shadow: none;
+    color: black
+    
+
+} */
+
+
+/* Home Section */
+
+
+
+.home{
+    padding-top: 10rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    
+}
+
+.home-bio h3{
+    font-size: 2rem;
+}
+
+.home-bio h1{
+    font-size: 3rem;
+    line-height: 1.4;
+}
+
+.home-bio span{
+    color: aqua;
+}
+
+.home-bio p{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+
+.profile-img img {
+    overflow: hidden;
+    width: 27vw;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: float 5s ease-in-out infinite;
+    margin-left: 1.2rem;
+    width: 100%;
+    
+    /* margin-right: 5rem; */
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.social-media a{
+    width: 3.3rem;
+    height: 3.3rem;
+    font-size: 2rem;
+    margin: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.4s ease;
+    
+}
+
+.social-media a:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
+
+
+.btn{
+    display: inline-block;
+    background-color: aqua;
+    margin: 1.5rem 0;
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+    color: #0b141e;
+    font-weight: 600;
+    transition: 0.5s ease;
+
+}
+
+.btn:hover{
+    color: aqua;
+    background-color: #0b141e;
+    box-shadow: 0 0 1rem aqua;
+}
+
+
+/* About Section */
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    
+}
+
+.about-resume{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    font-size: 2rem;
+   
+    gap: 1rem;
+    padding: 1rem 3rem;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.about-resume h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+.about-resume h3{
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+
+
+
+
+
+.about-resume span{
+    color: aqua;
+}
+
+.about-resume p{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.about-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    
+
+}
+
+.about-item{
+   /* padding: 0 ; */
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+   margin: .8rem;
+   width: 250px;
+   height: 150px;
+   cursor: pointer;
+   /* background-color: aqua; */
+   background-color: rgba(0, 0, 0, 0.9);
+   border-radius: .5rem;
+   color: #fff;
+   transition: 0.5s ease;
+}
+
+.about-item:hover{
+    border: 5px solid aqua;
+
+}
+
+
+
+/* Skills Section */
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.skills-header{
+    font-size: 2rem;
+    /* font-weight: 200; */
+    margin-bottom: 2rem;
+}
+
+.skills-header h2{
+    font-weight: 600;
+}
+
+.skills-header span{
+    color: aqua;
+}
+
+.skills-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+
+}
+
+.skills-item_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.skills-item_card:hover{
+    color: aqua;
+    border-radius: 1rem solid;
+    transform: scale(1.05);
+
+}
+
+.skills-item_card .bx{
+    font-size: 8rem;
+   
+}
+
+.skills-item_card h3{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+
+
+
+/* Projects Section */
+
+.proyects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.proyects-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+
+.proyects-card{
+    position: relative;
+    height: 22rem;
+    width: 100%;
+    /* padding: 2rem; */
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+}
+.proyects-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.proyects-card_overlay{
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* transition: 0.4s ease; */
+}
+
+.proyects-card_overlay:hover{
+    background: rgba(0, 0, 0, 0);
+    color: #000;
+    transition: 0.5s linear;
+}
+
+.proyects-card_overlay .bx {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1.1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.8rem;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.proyects-card_overlay .bx:hover{
+    transform: scale(1.3);
+    color: aqua;
+    background-color: #000;
+    box-shadow: 0 0 2rem aqua;
+}
+
+.proyects-heading{
+    font-size: 2rem;
+    padding-bottom: 2.8rem;
+}
+
+.proyects-heading{
+    font-weight: 600;
+}
+
+.proyects-heading span{
+    color: aqua;
+}
+
+
+
+
+/* Contact Section */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+
+form{
+    display: grid;
+    row-gap: 1rem;
+}
+
+form input, textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+    resize: none;
+}
+
+.contact-heading{
+    font-size: 2rem;
+}
+
+.contact-heading h2{
+    font-weight: 600;
+    padding-bottom: 2.5rem;
+}
+
+.contact-heading h2 span{
+    color: aqua;
+}
+
+
+
+
+/* Footer Section */
+
+
+/* === Responsive Section === */
+
+
+@media (max-width: 1100px){
+
+    
+
+    .home{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        gap: 2rem;
+    }
+
+    .profile-img img{
+        width: 35vw;
+    }
+
+    .social-media a{
+        width: 2rem;
+        height: 2rem;
+        margin: .7rem;
+    }
+
+    
+
+
+
+}
+
+@media (max-width: 930px){
+
+    #menu-btn{
+        display: block;
+    }
+
+    .menu-bar{
+        width: 100%;
+        /* height: 100vh; */
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+
+        display: none;
+        
+    }
+
+    .menu-bar.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 3rem;
+        
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about-items{
+        display: grid;
+        
+    }
+
+    .skills-header{
+        margin-bottom: 5rem;
+    }
+
+    .skills-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proyects-heading{
+        margin-bottom: 3rem;
+    }
+
+    .proyects-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proyects{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    
+}
+
+@media (max-width: 790px){
+    
+    .about-resume,
+    .skills-header,
+    .proyects-heading,
+    .contact-heading
+    {
+
+        font-size: 1.5rem;
+
+    }
+
+    .home{
+        padding-top: 7rem;
+    }
+
+    .about{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: .8rem;
+    }
+
+    .about-resume h2{
+        font-size: 2rem;
+    }
+
+    .about-resume h3{
+        font-size: 2rem;
+    }
+
+    .about-resume p{
+        font-size: 1.2rem;
+    }
+    
+
+    .proyects-items{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 400px;
+        
+
+    }
+
+    .profile-img img{
+        width: 300px;
+    }
+
+    .skills-header h2{
+        text-align: center;
+    }
+
+    /* .skills-item_card{
+        font-size: 1rem;
+    } */
+
+    .proyects{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .proyects-card{
+        max-height: 200px;
+    }
+
+    
+}
+
+@media (max-width: 600px){
+
+    .skills-items,.proyects-items{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .skills-items .bx{
+        font-size: 6rem;
+    }
+    
+    /* .proyects{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    } */
+
+
+
+}
+
+@media (max-width: 400px){
+
+    .profile-img img{
+        padding: 1rem;
+        width: 35vh;
+    }
+
+    .skills-items {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .skills-item_card h3{
+        font-size: 1.3;
+    }
+
+    .skills-items .bx{
+        font-size: 5rem;
+    }
+
+    .proyects-heading h2{
+        text-align: center;
+    }
+
+    .contact{
+        padding: 2rem;
+    }
+
+
+}
