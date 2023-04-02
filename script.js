@@ -19,7 +19,7 @@ window.onscroll = () => {
 // Typing animation 
 
 const animText = new Typed('.animated-text', {
-    strings : ['Desarrollador Web', 'Full Stack', 'Front-End' , 'Backt-End'],
+    strings : ['Desarrollador Web', 'Full Stack', 'Front-End' , 'Back-End'],
     backSpeed: 100,
     typeSpeed: 100,
     backDelay: 600,
