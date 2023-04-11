@@ -25,3 +25,23 @@ const animText = new Typed('.animated-text', {
     backDelay: 600,
     loop: true
 });
+
+
+
+const fibonacci = (limit) => {
+  
+    let fibo = [0,1]
+     for (let i = 0; i < limit; i++) {
+       if(fibo[fibo.length] <= limit){
+         fibo[fibo.length] = fibo[fibo.length -1] + fibo[fibo.length -2]
+       }
+       
+       return fibo
+       
+   
+     }
+  
+
+  
+  }
+  console.log(fibonacci(10))
