@@ -134,7 +134,7 @@ body{
 
 .profile-img img {
     overflow: hidden;
-    width: 27vw;
+    width: 50vw;
     object-fit: cover;
     border-radius: 50%;
     animation: float 5s ease-in-out infinite;
