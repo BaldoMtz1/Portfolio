@@ -386,6 +386,7 @@ body{
 }
 
 .proyects-card_overlay{
+    
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
     left: 0;
