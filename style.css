@@ -386,8 +386,7 @@ body{
 }
 
 .proyects-card_overlay{
-    
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
     position: absolute;
     left: 0;
     top: 0;
@@ -404,6 +403,10 @@ body{
     background: rgba(0, 0, 0, 0);
     color: #000;
     transition: 0.5s linear;
+    /* background: rgba(0, 0, 0, 0.5); */
+    transform: scale(1.05);
+   
+
 }
 
 .proyects-card_overlay .bx {
